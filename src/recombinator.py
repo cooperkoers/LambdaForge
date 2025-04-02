@@ -1,4 +1,4 @@
-from lambda_terms import FunctionApplication, Abstraction
+from lambda_terms import *
 from tree_form import *
 import random
 
