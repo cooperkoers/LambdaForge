@@ -1,0 +1,19 @@
+[build-system]
+requires = ["poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "LambdaForge"
+version = "0.0.1"
+description = "simulating reproduction using Lambda expressions"
+authors = ["Cooper Koers <ck5658@princeton.edu>"]
+packages = [{ include = "LambdaForge", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.8"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+LambdaForge = "LambdaForge.main:cli"
